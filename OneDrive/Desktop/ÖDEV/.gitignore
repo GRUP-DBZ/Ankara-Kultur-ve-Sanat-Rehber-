@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# Instance / local data
+instance/
+*.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# dotenv
+.env
+.env.*
+
+# Python history
+.python_history
+
+# OneDrive and user folders (avoid accidental inclusion)
+AppData/
+OneDrive/
+Downloads/
+Documents/
+Pictures/
+Videos/
+Music/
