@@ -3,17 +3,39 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
 .venv/
+ENV/
+env/
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+wheelhouse/
 
 # Instance / local data
 instance/
 *.db
 
+# Environment files
+.env
+.env.*
+
 # Editor directories and files
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 *.swp
 
 # OS files
@@ -22,18 +44,21 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# dotenv
-.env
-.env.*
+# Test / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
 
-# Python history
+# Logs
+*.log
+
+# Pip cache
+pip-log.txt
+
+# Misc
 .python_history
 
-# OneDrive and user folders (avoid accidental inclusion)
-AppData/
-OneDrive/
-Downloads/
-Documents/
-Pictures/
-Videos/
-Music/
+# If you accidentally committed large files (like venv), to remove them from the index locally run:
+# git rm -r --cached venv .venv instance
+# then commit and push.
