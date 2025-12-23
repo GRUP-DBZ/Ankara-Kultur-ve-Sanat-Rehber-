@@ -7,8 +7,7 @@ load_dotenv()
 
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
-    # Use /data for persistent storage on Render
-    db_path = '/data/events.db'
+    db_path = os.path.join(app.instance_path, 'events.db')
     default_db_uri = f'sqlite:///{db_path}'
     app.config.from_mapping(
         SECRET_KEY=os.environ.get('SECRET_KEY', 'dev'),
