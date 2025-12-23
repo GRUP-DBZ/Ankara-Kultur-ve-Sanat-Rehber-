@@ -37,7 +37,7 @@ with app.app_context():
                 location='Resim Galerisi',
                 start_time=base + timedelta(days=3, hours=10),
                 end_time=base + timedelta(days=3, hours=18),
-                image_url='https://images.unsplash.com/photo-1578149381288-8bfc85f0a18e?auto=format&fit=crop&w=900&q=80',
+                image_url='https://upload.wikimedia.org/wikipedia/commons/d/d0/Art_exhibition.jpg',
                 categories=[categories[2]]
             ),
             Event(
@@ -46,7 +46,7 @@ with app.app_context():
                 location='Devlet Tiyatrosu',
                 start_time=base + timedelta(days=5, hours=19),
                 end_time=base + timedelta(days=5, hours=21),
-                image_url='https://images.unsplash.com/photo-1524306087590-cc92b1b0d67a?auto=format&fit=crop&w=900&q=80',
+                image_url='https://www2.denizli.bel.tr/userfiles/image/r221115131756463.jpg',
                 categories=[categories[1]]
             ),
             Event(
@@ -64,7 +64,7 @@ with app.app_context():
                 location='Ankara Caz Kulübü',
                 start_time=base + timedelta(days=10, hours=20),
                 end_time=base + timedelta(days=10, hours=23),
-                image_url='https://images.unsplash.com/photo-1494700049270-c10122d29d44?auto=format&fit=crop&w=900&q=80',
+                image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KROYwg96uCKrrVBzXQG4X4JvFq8seQiFbA&s',
                 categories=[categories[0]]
             ),
         ]
@@ -74,3 +74,4 @@ with app.app_context():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
