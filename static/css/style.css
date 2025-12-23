@@ -162,7 +162,10 @@ a:hover { color: var(--primary-2); }
 	border-radius: var(--pill);
 	padding: 10px 14px;
 }
-.filter-bar .form-select option { color: #000; }
+.filter-bar .form-select option {
+	color: var(--text);
+	background: var(--panel);
+}
 
 /* Event tiles */
 .event-tile {
@@ -328,13 +331,13 @@ a:hover { color: var(--primary-2); }
 	border-radius: 12px;
 	padding: 10px 12px;
 }
-.form-control::placeholder { color: rgba(0,0,0,0.45); }
+.form-control::placeholder { color: var(--muted); }
 .form-select option {
-	background: #fff;
-	color: #000;
+	background: var(--panel);
+	color: var(--text);
 }
 .form-label {
-	color: rgba(0,0,0,0.85);
+	color: var(--text);
 	font-weight: 600;
 	margin-bottom: 6px;
 }
